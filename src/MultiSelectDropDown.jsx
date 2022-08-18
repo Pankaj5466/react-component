@@ -37,10 +37,10 @@ const MultiSelectDropDown = () => {
   }
 
   return (
-    <span
-      className="d-inline-block"
-      data-toggle="popover"
-      data-trigger="focus"
+    <span //TO-DO: Discuss with K , as what this is doing
+      className="d-inline-block" // need K discussion
+      data-toggle="popover" //need K discussion
+      data-trigger="focus" //need K discussion
       data-content="Please Select Options"
     >
 
