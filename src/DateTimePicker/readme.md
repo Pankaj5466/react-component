@@ -17,6 +17,7 @@ Some usefule Component:
 
 - https://reactdatepicker.com/#example-input-time
 - https://reactdatepicker.com/#example-select-time
+- Disabling Some pickup time: https://reactdatepicker.com/#example-date-range
 
 Step1: Install `npm install react-datepicker --save`
 

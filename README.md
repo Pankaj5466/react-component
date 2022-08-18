@@ -27,5 +27,6 @@ To-Do:
 
 Componets to do
 
--  DropDown reac-select with custom component
--  Date & Time Picker
+-  DropDown reac-select with custom component : Done
+-  Date & Time Picker : Done (Need to check CSS a slight by K)
+-  Paginated BootsStrap Table [Using](https://react-bootstrap-table.github.io/react-bootstrap-table2/)
