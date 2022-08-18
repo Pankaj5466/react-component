@@ -1,6 +1,5 @@
 import './App.css'
-import DatePicker from "./DatePicker"
-import MultiSelectDropDown from "./MultiSelectDropDown"
+import MultiSelectDropDown from "./DropDown/MultiSelectDropDown"
 
 export default function App() {
   return (

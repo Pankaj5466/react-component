@@ -1,9 +1,9 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 
 import { default as ReactSelect } from "react-select";
 import { components } from "react-select";
 
-import dropDownOptions from "./data"
+import dropDownOptions from "./dropDownDataFile"
 //Below props is the props sent by ReactSelect (it included all the data you want)
 const Option = (props) => {
 
@@ -47,7 +47,7 @@ const MultiSelectDropDown = () => {
       <ReactSelect
         options={dropDownOptions} //DropDown Items
         isMulti                  //Is Multiple Selection Allowed?
-        closemenuOnSelect={false}  //If false, then dropdown will not close on selection of item(s)
+        closeMenuOnSelect={false}  //If false, then dropdown will not close on selection of item(s)
         hideSelectedOptions={false} //as is
         components={{              //IMP: You can add you custom component //IMP: they can also use props of parent component to show , where they are selected or not and etc
           Option
