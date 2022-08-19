@@ -30,3 +30,7 @@ Componets to do
 -  DropDown reac-select with custom component : Done
 -  Date & Time Picker : Done (Need to check CSS a slight by K)
 -  Paginated BootsStrap Table [Using](https://react-bootstrap-table.github.io/react-bootstrap-table2/)
+
+- Install React Router DOM `npm install react-router-dom`
+  - Update index.js file with browse route
+  - Update App.js with individual Routes (as per this commit)
