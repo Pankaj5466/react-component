@@ -33,7 +33,16 @@ const allMenu = [
     menuUrl: 'run',
     subMenu: [
       new menuInfo("Start Debugging", "start-debugging"),
-      new menuInfo("Add Configuration", "add-configuration")
+      new menuInfo("Add Configuration", "add-configuration"),
+      {
+        menuName:"BreakPoint",
+        menuUrl:"breakpoint",
+        subMenu:[
+          new menuInfo("Step","/step"),
+          new menuInfo("Jump","/jump"),
+          new menuInfo("Continue","/continue")
+        ]
+      }
     ]
   }
 
