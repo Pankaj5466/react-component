@@ -47,47 +47,28 @@ const CreateMenu = () => {
    function menuCreateFromList(menu){
     if (menu === undefined)
       return <></>; //return a empty element in case there is no menu to implement
-
-     if(Array.isArray(menu)===false) //this is the last level of menu
-     {
-       let item = menu;
-       console.log("Last menu item rendering")
-       return (
-          <li>
-            <a href="default.asp">Home</a>
-            <a href={item.menuUrl}>{item.menuName}</a>     
-            {item.menuName}
-            <p>WhyNoLink?</p>
-          </li>
-       )
-     }
-
+     
     let childMenuItem = menu.map(item=>{
-
-      //if(item.subMenu.length !==0 ){ //There is going to sub-menu inside this menu
-    if(1)
-    {
-      return (
-          <ul>
-            <a href={item.menuUrl}>{item.menuName}</a>     
-            <div>
+        
+      if(item.subMenu.length !==0 ) //There is going to sub-menu inside this menu
+      {
+        return (
+            <ul>
+              <a href={item.menuUrl}>{item.menuName}</a>     
               {menuCreateFromList(item.subMenu)}
-            </div>
-          </ul>
-        );
+            </ul>
+          );
     }
-    
+
+      //leaf item
       return (
           <li>
-            {item.menuName}
+            <a href={item.menuUrl}>{item.menuName}</a>
           </li>
         );
-
-      console.log(item);
     })
 
-     return childMenuItem;
-     
+     return childMenuItem;  
    }
 
   let toRenderMenu = menuCreateFromList(allMenu);
