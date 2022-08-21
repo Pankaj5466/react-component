@@ -34,3 +34,4 @@ Componets to do
 - Install React Router DOM `npm install react-router-dom`
   - Update index.js file with browse route
   - Update App.js with individual Routes (as per this commit)
+  - [Helper Guide](https://stackoverflow.com/questions/69828516/you-cannot-render-a-router-inside-another-router-you-should-never-have-more)
