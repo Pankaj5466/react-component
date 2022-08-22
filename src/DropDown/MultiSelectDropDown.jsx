@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { default as ReactSelect } from "react-select";
+import MySelect from "./MySelect"
 import { components } from "react-select";
 
 import dropDownOptions from "./dropDownDataFile"
@@ -44,7 +45,7 @@ const MultiSelectDropDown = () => {
       data-content="Please Select Options"
     >
 
-      <ReactSelect
+      <MySelect
         options={dropDownOptions} //DropDown Items
         isMulti                  //Is Multiple Selection Allowed?
         closeMenuOnSelect={false}  //If false, then dropdown will not close on selection of item(s)
@@ -59,7 +60,7 @@ const MultiSelectDropDown = () => {
         value={selectedDropDownOptions}  //current selected items. // NEED to be managed by useState or class this.state
       >
 
-      </ReactSelect>
+      </MySelect>
 
     </span>
 

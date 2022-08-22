@@ -4,6 +4,8 @@ import App from './App'
 
 import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css'; //For PaginatedTable Folder
 
+import "bootstrap/dist/css/bootstrap.css";
+
 //install first using npm install react-router-dom
 import { BrowserRouter, Route, Routes } from 'react-router-dom'; //for Routing
 
